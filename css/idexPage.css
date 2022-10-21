@@ -1,0 +1,54 @@
+.indexPage {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr;
+}
+
+.indexPage_searchInput {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indexPage_login,
+.indexPage_login_user {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+}
+
+.indexPage_login_user img {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--border-radius);
+}
+
+/*옆으로 스크롤 되게 구현하기*/
+.indexPage_memoList {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+}
+
+.indexPage_memoList img {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--border-radius);
+}
+
+.indexPage_toDoList {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+}
+
+.indexPage_weather {
+    grid-column: -1/-2;
+    grid-row: 3/4;
+
+}

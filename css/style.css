@@ -1,0 +1,35 @@
+@import "reset.css";
+@import "nav.css";
+@import "idexPage.css";
+@import "variables.css";
+@import "hidden.css";
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #DDB290;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#appBox {
+    width: 90%;
+    height: 80vh;
+    display: grid;
+    background-color: bisque;
+    grid-template-columns: 100px 1fr;
+}
+
+main {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+
+
+.chatingPage {
+    grid-column: 2/3;
+}

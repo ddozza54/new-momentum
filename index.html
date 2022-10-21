@@ -10,17 +10,109 @@
 </head>
 
 <body>
-
+    <!--상자 밖 위-->
     <h2 id='clock'>00:00</h2>
 
     <h1>Time Until Christmas</h1>
     <h2 id='christmasClock'>00:00:00</h2>
 
+
+
     <button id='colorbutton'>Give me color</button>
+
+    <!--앱 상자-->
+    <div id="appBox">
+
+        <!--앱_네비 메뉴-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        home logo
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <i class="far fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <i class="far fa-comment fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <i class="fas fa-search fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <div class="nav__smallnotification"></div>
+                        <i class="fas fa-ellipsis-h fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--앱_메인_인덱스-->
+        <main>
+            <div class='indexPage'>
+                <form class='indexPage_searchInput'>
+                    <input type='text' placeholder='search' />
+                    <span><i class="fas fa-search fa-lg"></i></span>
+                </form>
+                <div class="indexPage_login">
+                    <form class='indexPage_login_form hidden'>
+                        <input required type='text' placeholder='What is your Name?' maxlength='15' />
+                        <button>Login</button>
+                    </form>
+                </div>
+                <div class="indexPage_login_user hidden">
+                    <img src="img/duck.jpg" class="user-component__avatar user-component__avatar--sm" />
+                    <h2 id='greeting'></h2>
+                    <button id='logOutBtn'>Log Out</button>
+                </div>
+            </div>
+
+            <div class="indexPage_memoList">
+                <div class="memoList_category">
+                    <img src="img/duck.jpg" class="user-component__avatar user-component__avatar--sm" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title user-component__title--not-bold">Duck</h4>
+                        <span class="user-component__state">memo detail</span>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class='indexPage_toDoList'>
+                to do list
+            </div>
+            <div class='indexPage_weather'>
+                weather
+            </div>
+    </div>
+
+    <!--앱_채팅페이지-->
+    <div class='chatingPage'>
+        chatpage
+    </div>
+    </main>
+    </div>
+    <footer class='saying'>
+        <span class='saying_sentence'>good</span>
+        <span class='saying_author'>person</span>
+    </footer>
+
+
+
 
     <script src='js/app.js'></script>
     <script src='js/clock.js'></script>
     <script src='js/background.js'></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
