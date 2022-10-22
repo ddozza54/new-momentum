@@ -1,13 +1,15 @@
 @import "reset.css";
-@import "nav.css";
-@import "idexPage.css";
 @import "variables.css";
+@import "idexPage.css";
+@import "login.css";
+
+@import "nav.css";
 @import "hidden.css";
 
 body {
     width: 100%;
     height: 100vh;
-    background-color: #DDB290;
+    background-color: var(--color-body);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,11 +17,12 @@ body {
 }
 
 #appBox {
-    width: 90%;
+    width: 80%;
     height: 80vh;
     display: grid;
-    background-color: bisque;
+    background-color: var(--color-bg);
     grid-template-columns: 100px 1fr;
+    border-radius: 50px;
 }
 
 main {
@@ -28,7 +31,11 @@ main {
     grid-template-columns: 5fr 3fr;
 }
 
-
+button {
+    background-color: var(--color-ornage);
+    border: none;
+    border-radius: 10px;
+}
 
 .chatingPage {
     grid-column: 2/3;

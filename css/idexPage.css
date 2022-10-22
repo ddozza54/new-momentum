@@ -11,20 +11,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
-.indexPage_login,
-.indexPage_login_user {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
+.indexPage_searchInput input {
+    border: none;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
 }
 
-.indexPage_login_user img {
-    width: 200px;
-    height: 200px;
-    border-radius: var(--border-radius);
+.searchIcon {
+    position: absolute;
+    right: 10px;
+    color: var(--color-green);
+    /*글씨 컬러 왜 안될까?*/
 }
+
 
 /*옆으로 스크롤 되게 구현하기*/
 .indexPage_memoList {

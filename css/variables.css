@@ -1,3 +1,10 @@
 :root {
     --border-radius: 20%;
+    --color-body: #FFD6B0;
+    --color-bg: #FFF5EA;
+    --color-lgreen: #3DA2A1;
+    --color-green: #01616a;
+    --color-ornage: #fbbd2e;
+    --color-dkorange: #ef9f3c;
+    --color-pink: #ffcac7;
 }

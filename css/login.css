@@ -1,0 +1,42 @@
+.indexPage_login_form,
+.indexPage_login_user {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.indexPage_login_form {
+    width: 60%;
+    border: 2px solid black;
+}
+
+.indexPage_login_form>input,
+.indexPage_login_form>button {
+    border: none;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.indexPage_login_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.indexPage_login_user img {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--border-radius);
+    margin: 10px 0;
+}
+
+.indexPage_login_user h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.indexPage_login_user button {
+    width: 60%;
+    border: none;
+}
