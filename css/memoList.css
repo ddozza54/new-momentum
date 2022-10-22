@@ -1,0 +1,39 @@
+.indexPage_memoList {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-body);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.memoList_category {
+    width: 80%;
+    height: 80px;
+    margin: 10px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-lgreen);
+    border-radius: 20px;
+}
+
+.memo_img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.memo_detail h4 {
+    font-weight: 600;
+}
+
+.memo_detail h4,
+.memo_detail span {
+    color: var(--color-green);
+}
