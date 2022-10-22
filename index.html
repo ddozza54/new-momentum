@@ -66,6 +66,7 @@
                 <!--로그인-->
                 <div class="indexPage_login">
                     <form class='indexPage_login_form hidden'>
+                        <span>Welcome to MemoChat</span>
                         <input required type='text' placeholder='What is your Name?' maxlength='15' />
                         <button>Login</button>
                     </form>
@@ -93,6 +94,7 @@
                 </div>
                 <!--투두리스트-->
                 <div class='indexPage_toDoList'>
+                    <h1>To Do List</h1>
                     <form class='todo-form'>
                         <input type='text' placeholder='Write a To-Do and Press Enter' />
                     </form>
@@ -108,10 +110,53 @@
                 </div>
             </div>
 
-
             <!--앱_채팅페이지-->
             <div class='chatingPage'>
-                chatpage
+                <div class='chatingPage_header'>
+                    <a href="#">
+                        <i class="fas fa-angle-left fa-3x"></i>
+                    </a>
+                    <h1 class="alt-header__title">Shopping</h1>
+                    <div class='chatingPage_header_icon'>
+                        <span><i class="fas fa-search fa-2x"></i></span>
+                        <span><i class="fas fa-bars fa-2x"></i></span>
+                    </div>
+                </div>
+
+                <div class='chatingPage_main'>
+                    <div class='date'>
+                        <span>Wedsday, October 11, 2022</span>
+                    </div>
+
+                    <div class='memo'>
+                        <span class='memo_text'>
+                            Today's Dinner<br>
+                            Pizza, Salad,<br>
+                            Coke
+                        </span>
+                    </div>
+                    <div class='memo memo-marked'>
+                        <span class='memo_text'>
+                            Mom's Day Card
+                        </span>
+                    </div>
+                    <div class='memo'>
+                        <span class='memo_text'>
+                            notes
+                        </span>
+                    </div>
+
+                </div>
+                <div class='reply'>
+                    <form class='reply_form'>
+                        <i class="far fa-plus-square fa-lg"></i>
+                        <input type="text" placeholder="Write a message..." />
+                        <i class="far fa-smile fa-lg"></i>
+                        <button>
+                            <i class="far fa-arrow-alt-circle-up fa-lg"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </main>
 

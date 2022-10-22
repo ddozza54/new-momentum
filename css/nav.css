@@ -2,8 +2,8 @@
     grid-column: 1/2;
     grid-row: 1/-1;
     background-color: var(--color-lgreen);
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
+    border-bottom-left-radius: var(--border-radius-appBox);
+    border-top-left-radius: var(--border-radius-appBox);
     height: inherit;
     margin-right: 15px;
     display: flex;

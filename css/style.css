@@ -2,9 +2,12 @@
 @import "variables.css";
 @import "idexPage.css";
 @import "login.css";
-
 @import "nav.css";
+@import "chat.css";
+@import "todolist.css";
+
 @import "hidden.css";
+
 
 body {
     width: 100%;
@@ -22,7 +25,8 @@ body {
     display: grid;
     background-color: var(--color-bg);
     grid-template-columns: 100px 1fr;
-    border-radius: 50px;
+    border-radius: var(--border-radius-appBox);
+    margin: 10px 0;
 }
 
 main {
@@ -35,8 +39,4 @@ button {
     background-color: var(--color-ornage);
     border: none;
     border-radius: 10px;
-}
-
-.chatingPage {
-    grid-column: 2/3;
 }
