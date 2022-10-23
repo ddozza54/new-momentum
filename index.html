@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gowun+Dodum&family=Nunito+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Momentum 2nd</title>
 </head>
@@ -12,13 +19,7 @@
 <body>
     <!--상자 밖 위-->
     <h2 id='clock'>00:00</h2>
-
-    <h1>Time Until Christmas</h1>
-    <h2 id='christmasClock'>00:00:00</h2>
-
-
-
-    <button id='colorbutton'>Give me color</button>
+    <button id='changeBgBtn'>Change Background</button>
 
     <!--앱 상자-->
     <div id="appBox">
@@ -81,34 +82,52 @@
 
                 <!--메모 리스트-->
                 <div class="indexPage_memoList">
-                    <div class="memoList_category">
-                        <img src="img/duck.jpg" class="memo_img" />
-                        <div class="memo_detail">
-                            <h4>Shopping</h4>
-                            <span>notes</span>
+                    <div class='memoList_head'>
+                        <h2>Memo List </h2>
+                        <i class="fas fa-plus-square"></i>
+                    </div>
+                    <div class='memoList_Box'>
+                        <div class="memoList_category">
+                            <div class='memo_img1 memo_i'>
+                                <i class="fas fa-shopping-basket fa-2x"></i>
+                            </div>
+                            <div class="memo_detail">
+                                <h4>Shopping</h4>
+                                <span>notes</span>
+                            </div>
+                        </div>
+
+                        <div class="memoList_category">
+                            <div class='memo_img2 memo_i'>
+                                <i class="fas fa-exclamation fa-2x"></i>
+                            </div>
+                            <div class="memo_detail">
+                                <h4>Idea</h4>
+                                <span>song player</span>
+                            </div>
+                        </div>
+
+                        <div class="memoList_category">
+                            <div class='memo_img3 memo_i'>
+                                <i class="fas fa-briefcase fa-2x"></i>
+                            </div>
+                            <div class="memo_detail">
+                                <h4>Work</h4>
+                                <span>check e-mail</span>
+                            </div>
+                        </div>
+
+                        <div class="memoList_category">
+                            <div class='memo_img4 memo_i'>
+                                <i class="fas fa-pen fa-2x"></i>
+                            </div>
+                            <div class="memo_detail">
+                                <h4>Plans</h4>
+                                <span>take a walk</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="memoList_category">
-                        <img src="img/duck.jpg" class="memo_img" />
-                        <div class="memo_detail">
-                            <h4>Idea</h4>
-                            <span>random music?</span>
-                        </div>
-                    </div>
-                    <div class="memoList_category">
-                        <img src="img/duck.jpg" class="memo_img" />
-                        <div class="memo_detail">
-                            <h4>Challenge</h4>
-                            <span>Vanila JS</span>
-                        </div>
-                    </div>
-                    <div class="memoList_category">
-                        <img src="img/duck.jpg" class="memo_img" />
-                        <div class="memo_detail">
-                            <h4>Shopping</h4>
-                            <span>notes</span>
-                        </div>
-                    </div>
+
                 </div>
 
                 <!--투두리스트-->
@@ -124,10 +143,38 @@
                 </div>
 
                 <!--날씨-->
-                <div class='indexPage_weather'>
-                    <span id='weather'>weather</span>
-                    <span id='city'>city</span>
+                <div class='indexPage_weatherDday'>
+                    <div class='weather'>
+                        <h1>Waether</h1>
+                        <span id='weather'>weather</span>
+                        <span id='city'>city</span>
+                    </div>
+                    <div class='dDay'>
+                        <div class='snow'>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                            <div class="snowflake"></div>
+                        </div>
+                        <h1>D-day</h1>
+                        <h2>Time Until Christmas</h2>
+                        <h2 id='christmasClock'>00:00:00</h2>
+                    </div>
                 </div>
+
             </div>
 
             <!--앱_채팅페이지-->
@@ -183,9 +230,9 @@
     </div>
 
 
-    <footer class='saying'>
-        <span class='saying_sentence'>good</span>
-        <span class='saying_author'>person</span>
+    <footer class='quote'>
+        <span class='quote_text'></span>
+        <span class='quote_author'></span>
     </footer>
 
 
@@ -196,6 +243,8 @@
     <script src='js/background.js'></script>
     <script src='js/weather.js'></script>
     <script src='js/todo.js'></script>
+    <script src='js/quotes.js'></script>
+    <script src='js/memo.js'></script>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
 </body>

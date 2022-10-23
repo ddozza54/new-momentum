@@ -5,10 +5,23 @@
 @import "nav.css";
 @import "chat.css";
 @import "todolist.css";
-@import "weather.css";
+@import "weatherAndDDay.css";
 @import "memoList.css";
+@import "quotes.css";
+@import "background.css";
+
+@import "snowflake.css";
 
 @import "hidden.css";
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+*/
 
 
 body {
@@ -19,6 +32,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+#clock {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-green);
+    align-self: center;
 }
 
 #appBox {
@@ -41,4 +64,20 @@ button {
     background-color: var(--color-ornage);
     border: none;
     border-radius: 10px;
+}
+
+#changeBgBtn {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    font-family: 'Fuzzy Bubbles', cursive;
+    background-color: var(--color-bg);
+    color: var(--color-green);
+    top: 20px;
+    right: 20px;
+
+}
+
+button:hover {
+    transform: scale(1.1);
 }
