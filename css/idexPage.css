@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .indexPage_searchInput input {
@@ -19,11 +18,18 @@
     width: 500px;
     height: 30px;
     border-radius: 10px;
+    padding: 0 10px;
 }
 
 .searchIcon {
-    position: absolute;
-    right: 10px;
     color: var(--color-green);
-    /*글씨 컬러 왜 안될까?*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchIcon i {
+    position: absolute;
+    right: 15px;
 }

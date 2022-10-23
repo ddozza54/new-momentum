@@ -16,7 +16,7 @@ function onGeoOk(position) {
             const weather = document.getElementById("weather");
             const city = document.getElementById("city");
             city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main}/${Math.round((data.main.temp) - 272.15)}Cº`;
+            weather.innerText = `${data.weather[0].main} & ${Math.round((data.main.temp) - 272.15)}Cº`;
 
         });
 }

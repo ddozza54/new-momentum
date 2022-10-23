@@ -24,6 +24,7 @@ function onLogoutBtnClick() {
     localStorage.removeItem(USERNAME_KEY);
     loginUser.classList.add(HIDDEN_CLASSNAME);
     loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginInput.value = "";
 }
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);

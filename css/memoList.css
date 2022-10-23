@@ -11,22 +11,59 @@
     align-items: center;
 }
 
+.memoList_head {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.memoList_head h2 {
+    font-size: 20px;
+    color: var(--color-green);
+    margin: 10px 0;
+}
+
+.memoList_head i:hover {
+    transform: scale(1.1);
+}
+
+.memoList_head i {
+    color: var(--color-green);
+    font-size: 20px;
+    position: absolute;
+    right: -40px;
+}
+
+.memoList_Box {
+    width: 90%;
+    height: 100%;
+    overflow: overlay;
+}
+
 .memoList_category {
     width: 80%;
-    height: 80px;
-    margin: 10px;
-    padding: 0 15px;
+    height: 65px;
+    margin: 5px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     background-color: var(--color-lgreen);
     border-radius: 20px;
 }
 
-.memo_img {
+.memo_i {
     width: 50px;
     height: 50px;
     border-radius: 10px;
+    margin: 5px;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-green);
 }
 
 .memo_detail h4 {

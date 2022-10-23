@@ -8,12 +8,6 @@
     align-items: center;
 }
 
-.indexPage_weatherDday h1 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-green);
-    margin-bottom: 10px;
-}
 
 .weather,
 .dDay {
@@ -27,11 +21,19 @@
     margin-bottom: 20px;
 }
 
+.indexPage_weatherDday h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-bg);
+    margin-bottom: 20px;
+}
+
 .dDay h2,
 .weather span {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 20px;
     color: var(--color-green);
+    margin-bottom: 5px;
 }
 
 

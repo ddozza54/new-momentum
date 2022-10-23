@@ -1,0 +1,16 @@
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote span {
+    color: var(--color-green);
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.quote_text {
+    font-weight: 600;
+}
