@@ -44,6 +44,17 @@ body {
     align-self: center;
 }
 
+@keyframes scaleChange {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 #appBox {
     width: 80%;
     height: 80vh;
@@ -52,6 +63,7 @@ body {
     grid-template-columns: 100px 1fr;
     border-radius: var(--border-radius-appBox);
     margin: 10px 0;
+    animation: scaleChange 2.5s ease-in-out forwards;
 }
 
 main {

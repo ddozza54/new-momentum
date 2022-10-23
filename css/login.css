@@ -6,6 +6,17 @@
     flex-direction: column;
 }
 
+
+@keyframes vibration {
+    from {
+        transform: rotate(1deg);
+    }
+
+    to {
+        transform: rotate(-1deg);
+    }
+}
+
 /*로그인 전*/
 .indexPage_login_form {
     width: 80%;
@@ -15,6 +26,12 @@
     align-items: center;
     background-color: var(--color-pink);
     border-radius: 30px;
+    animation: vibration 0.1s infinite;
+    animation-delay: 3s;
+}
+
+.indexPage_login_form:hover {
+    animation: none;
 }
 
 .indexPage_login_form span {
@@ -33,12 +50,15 @@
 
 
 /*로그인 후*/
+
+
 .indexPage_login_user {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
     margin-right: 50px;
+    animation: showUp 0.2s forwards;
 }
 
 .indexPage_login_user img {
