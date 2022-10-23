@@ -1,8 +1,8 @@
 .indexPage_weatherDday {
-    grid-column: -1/-2;
+    grid-column: 2/3;
     grid-row: 3/4;
-    width: 300px;
-    height: 310px;
+    margin-top: 25px;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,37 +14,45 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 45%;
     padding: 20px 15px;
     background-color: var(--color-orange);
     border-radius: 30px;
     margin-bottom: 20px;
-}
-
-.indexPage_weatherDday h1 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--color-bg);
-    margin-bottom: 20px;
-}
-
-.dDay h2,
-.weather span {
-    font-family: 'Fuzzy Bubbles', cursive;
-    font-size: 20px;
-    color: var(--color-green);
-    margin-bottom: 5px;
-}
-
-
-.dDay h2 {
-    color: var(--color-bg);
-
+    position: relative;
+    overflow: hidden;
 }
 
 .dDay {
-    position: relative;
-    overflow: hidden;
-    background: var(--color-green);
+    background-color: var(--color-green);
+}
 
+.dDay_text,
+.weather_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.dDay_text h1,
+.weather_text h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-bg);
+    margin-bottom: 10px;
+}
+
+.dDay_text span,
+.weather_text span {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 13px;
+    color: var(--color-bg);
+    margin-bottom: 5px;
+}
+
+#weatherI,
+#tree {
+    position: absolute;
+    font-size: 50px;
+    right: 20px;
+    bottom: 15px;
+    opacity: 0.6;
 }

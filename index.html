@@ -79,6 +79,16 @@
                     <button id='logOutBtn'>Log Out</button>
                 </div>
 
+                <!--투두리스트-->
+                <div class='indexPage_toDoList'>
+                    <h1>To Do List</h1>
+                    <form class='todo-form'>
+                        <input type='text' placeholder='Write a To-Do and Press Enter' />
+                    </form>
+                    <ul class='todo-list'>
+                        <!--li는 js로 추가-->
+                    </ul>
+                </div>
 
                 <!--메모 리스트-->
                 <div class="indexPage_memoList">
@@ -130,25 +140,19 @@
 
                 </div>
 
-                <!--투두리스트-->
-                <div class='indexPage_toDoList'>
-                    <h1>To Do List</h1>
-                    <form class='todo-form'>
-                        <input type='text' placeholder='Write a To-Do and Press Enter' />
-                    </form>
-                    <ul class='todo-list'>
-                        <!--li는 js로 추가-->
-                    </ul>
-
-                </div>
-
-                <!--날씨-->
+                <!--날씨 & 디데이-->
                 <div class='indexPage_weatherDday'>
                     <div class='weather'>
-                        <h1>Waether</h1>
-                        <span id='weather'>weather</span>
-                        <span id='city'>city</span>
+                        <div class='weather_text'>
+                            <h1>Waether</h1>
+                            <span id='weather'>weather</span>
+                            <span id='city'>city</span>
+                        </div>
+                        <span id='weatherI'>
+                            ❔
+                        </span>
                     </div>
+
                     <div class='dDay'>
                         <div class='snow'>
                             <div class="snowflake"></div>
@@ -169,14 +173,16 @@
                             <div class="snowflake"></div>
                             <div class="snowflake"></div>
                         </div>
-                        <h1>D-day</h1>
-                        <h2>Time Until Christmas</h2>
-                        <h2 id='christmasClock'>00:00:00</h2>
+                        <div class='dDay_text'>
+                            <h1>D-day</h1>
+                            <span>Time Until Christmas Eve</span>
+                            <span id='christmasClock'>00:00:00</span>
+                        </div>
+                        <span id='tree'>
+                            🎄
+                        </span>
                     </div>
                 </div>
-
-
-
 
             </div>
 
@@ -237,7 +243,7 @@
 
     </div>
 
-
+    <!--명언-->
     <footer class='quote'>
         <span class='quote_text'></span>
         <span class='quote_author'></span>

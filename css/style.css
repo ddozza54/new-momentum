@@ -32,6 +32,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: overlay;
 }
 
 
@@ -57,7 +58,8 @@ body {
 
 #appBox {
     width: 80%;
-    height: 80vh;
+    min-width: 800px;
+    height: 800px;
     display: grid;
     background-color: var(--color-bg);
     grid-template-columns: 100px 1fr;

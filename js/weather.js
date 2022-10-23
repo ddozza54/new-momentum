@@ -1,4 +1,4 @@
-
+const weatherIcon = document.getElementById("weatherI");
 
 const API_KEY = "4fbccc77c98331be73c86f4ec3302b14";
 
@@ -15,9 +15,18 @@ function onGeoOk(position) {
             console.log(data);
             const weather = document.getElementById("weather");
             const city = document.getElementById("city");
+            const weatherData = data.weather[0].main;
             city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main} & ${Math.round((data.main.temp) - 272.15)}Cº`;
-
+            weather.innerText = `${weatherData} & ${Math.round((data.main.temp) - 272.15)} Cº`;
+            if (weatherData == "Clear") {
+                weatherIcon.innerText = "🌞";
+            } else if (weatherData == "Cloud") {
+                weatherIcon.innerText = "⛅";
+            } else if (weatherData == "Mist") {
+                weatherIcon.innerText = "🌫";
+            } else if (weatherData == "Rain") {
+                weatherIcon.innerText = "☂";
+            }
         });
 }
 function onGeoError() {
