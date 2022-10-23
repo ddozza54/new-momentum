@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     width: inherit;
+    height: var(--height-appbox);
     border-bottom-right-radius: var(--border-radius-appBox);
     border-top-right-radius: var(--border-radius-appBox);
     background-color: var(--color-pink);

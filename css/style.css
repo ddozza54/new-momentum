@@ -57,9 +57,9 @@ body {
 }
 
 #appBox {
-    width: 80%;
+    width: 79.9%;
     min-width: 800px;
-    height: 800px;
+    height: var(--height-appbox);
     display: grid;
     background-color: var(--color-bg);
     grid-template-columns: 100px 1fr;

@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-self: flex-start;
     width: 90%;
+    height: 90%;
     flex-direction: column;
     color: var(--color-green);
     margin-left: 10px;
