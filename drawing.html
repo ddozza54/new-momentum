@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gowun+Dodum&family=Nunito+Sans:ital,wght@0,400;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/canvas/drawing.css">
+    <title>MemoChat Drawing</title>
+</head>
+
+<body>
+    <!--상자 밖 위-->
+    <h2 id='clock'>00:00</h2>
+    <button id='changeBgBtn'>Change Background</button>
+
+    <!--앱 상자-->
+    <div id="appBox">
+
+        <!--앱_네비 메뉴-->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn">
+                    <a class="nav__link" href="index.html">
+                        <i class="fas fa-home fa-2x homeIcon"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <i class="far fa-user fa-2x userIcon"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <i class="far fa-comment fa-2x chatIcon"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="drawing.html">
+                        <i class="fas fa-pen fa-2x drawingIcon"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="#">
+                        <div class="nav__smallnotification"></div>
+                        <i class="fas fa-ellipsis-h fa-2x moreIcon"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--앱_메인_인덱스-->
+        <main>
+            <div class='indexPage'>
+                <!--캔버스-->
+                <canvas></canvas>
+
+
+
+
+            </div>
+
+            <!--앱_채팅페이지-->
+            <div class='chatingPage'>
+
+
+            </div>
+
+
+
+        </main>
+
+    </div>
+
+    <!--명언-->
+    <footer class='quote'>
+        <span class='quote_text'></span>
+        <span class='quote_author'></span>
+    </footer>
+
+
+
+
+    <script src='js/app.js'></script>
+    <script src='js/clock.js'></script>
+    <script src='js/background.js'></script>
+    <script src='js/quotes.js'></script>
+
+    <script src='js/drawing.js'></script>
+
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,19 +1,14 @@
-@import "reset.css";
-@import "variables.css";
-@import "idexPage.css";
-@import "login.css";
-@import "nav.css";
-@import "chat.css";
-@import "todolist.css";
-@import "weatherAndDDay.css";
-@import "memoList.css";
-@import "quotes.css";
-@import "background.css";
-
-@import "snowflake.css";
+@import "../reset.css";
+@import "../variables.css";
+@import "../idexPage.css";
+@import "../nav.css";
+@import "../chat.css";
+@import "../quotes.css";
+@import "../background.css";
 
 
-@import "hidden.css";
+@import "canvas.css";
+
 
 * {
     font-family: 'Nunito Sans', sans-serif;
@@ -46,7 +41,7 @@ body {
     align-self: center;
 }
 
-@keyframes scaleChange {
+/* @keyframes scaleChange {
     from {
         opacity: 0;
     }
@@ -55,7 +50,7 @@ body {
         opacity: 1;
         transform: none;
     }
-}
+} */
 
 #appBox {
     width: 79.9%;
@@ -66,7 +61,7 @@ body {
     grid-template-columns: 100px 1fr;
     border-radius: var(--border-radius-appBox);
     margin: 10px 0;
-    animation: scaleChange 2.5s ease-in-out forwards;
+    /* animation: scaleChange 2.5s ease-in-out forwards; */
 }
 
 main {
@@ -97,7 +92,6 @@ button:hover {
     transform: scale(1.1);
 }
 
-
-.homeIcon {
+.drawingIcon {
     color: var(--color-pink);
 }

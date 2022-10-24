@@ -1,0 +1,13 @@
+.indexPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+canvas {
+    width: 600px;
+    height: 600px;
+    border: solid black 1px;
+}
