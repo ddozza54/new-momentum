@@ -16,7 +16,6 @@ ctx.beginPath();
 ctx.arc(240, 130, 50, 0, 2 * Math.PI);
 ctx.fill();
 
-
 ctx.beginPath();
 ctx.arc(220, 120, 10, 1 * Math.PI, 0);
 ctx.fillStyle = "yellow";
