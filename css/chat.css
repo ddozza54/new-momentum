@@ -48,7 +48,7 @@
 }
 
 
-.memo {
+.memo-list li {
     width: 200px;
     padding: 20px;
     margin-bottom: 20px;
@@ -70,6 +70,7 @@
     background-color: var(--color-lgreen);
     position: absolute;
     bottom: 0;
+    right: 0;
     border-bottom-right-radius: var(--border-radius-appBox);
 }
 

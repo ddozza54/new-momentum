@@ -20,7 +20,7 @@ function onGeoOk(position) {
             weather.innerText = `${weatherData} & ${Math.round((data.main.temp) - 272.15)} Cº`;
             if (weatherData == "Clear") {
                 weatherIcon.innerText = "🌞";
-            } else if (weatherData == "Cloud") {
+            } else if (weatherData == "Clouds") {
                 weatherIcon.innerText = "⛅";
             } else if (weatherData == "Mist") {
                 weatherIcon.innerText = "🌫";

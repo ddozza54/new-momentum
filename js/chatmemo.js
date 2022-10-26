@@ -1,20 +1,42 @@
-const chatForm = document.querySelector(".reply_form");
-const chatInput = chatForm.querySelector(".reply_input");
-const button = chatForm.querySelector("button");
+const memoList = document.querySelector(".memo-list");
+const replyForm = document.querySelector(".reply_form");
+const replyInput = replyForm.querySelector(".reply_input");
+
+const MEMOES_KEY = "memos";
+
+let memoes = [];
+
+function saveNewMemo() {
+    localStorage.setItem(MEMOES_KEY, JSON.stringify(memoes))
+}
+
+function paintNewMemo(newMemoObj) {
+    const li = document.createElement("li");
+    li.id = newMemoObj.id;
+    const newMemoSpan = document.createElement("span");
+    newMemoSpan.innerText = newMemoObj.text;
+    li.appendChild(newMemoSpan);
+    const button = document.createElement("button");
+    button.innerText = "✨";
+    const marked = document.createElement("input");
+    marked.type = "checkbox";
+    li.appendChild(button);
+    li.appendChild(marked);
+    memoList.appendChild(li);
+}
 
 
-// function onChatMemoSubmit(event) {
-//     alert("input submit!");
+function onChatMemoSubmit(event) {
+    event.preventDefault();
+    const newMemoText = replyInput.value;
+    replyInput.value = "";
+    const newMemoObj = {
+        text: newMemoText,
+        id: Date.now(),
+    }
+    memoes.push(newMemoObj);
+    paintNewMemo(newMemoObj);
+    saveToDos();
+}
 
-//     event.preventDefualt();
-//     const newMemo = chatInput.value;
-//     chatInput.value = "";
-//     const memoDiv = document.createElement("div");
-
-// }
-// function onButtonClick() {
-//     alert("button Clicked!");
-// }
-
-// chatForm.addEventListener("submit", onChatMemoSubmit);
-// button.addEventListener("click", onButtonClick);
+replyForm.addEventListener("submit", onChatMemoSubmit);
