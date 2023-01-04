@@ -59,7 +59,7 @@
 
 .memo-marked {
     background-color: var(--color-orange);
-    border: 3px solid var(--color-lgreen);
+    border: 3px solid var(--color-pink);
     align-self: flex-start;
 }
 

@@ -10,6 +10,12 @@ function saveNewMemo() {
     localStorage.setItem(MEMOES_KEY, JSON.stringify(memoes))
 }
 
+function onDeleteBtnClick(event) {
+    if (li.id = event.id) {
+        localStorage.removeItem()
+    }
+}
+
 function paintNewMemo(newMemoObj) {
     const li = document.createElement("li");
     li.id = newMemoObj.id;
@@ -23,6 +29,7 @@ function paintNewMemo(newMemoObj) {
     li.appendChild(button);
     li.appendChild(marked);
     memoList.appendChild(li);
+    button.addEventListener("click", onDeleteBtnClick);
 }
 
 
@@ -36,7 +43,7 @@ function onChatMemoSubmit(event) {
     }
     memoes.push(newMemoObj);
     paintNewMemo(newMemoObj);
-    saveToDos();
+    saveNewMemo();
 }
 
 replyForm.addEventListener("submit", onChatMemoSubmit);

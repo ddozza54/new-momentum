@@ -9,13 +9,14 @@ function realTime() {
     clock.innerText = `${hour}:${minute}:${second}`
 }
 
+/*크리스마스 디데이*/
 function chirstmasDDay() {
     const second = new Date().getSeconds();
     const minute = new Date().getMinutes();
     const hour = new Date().getHours();
 
     function calDay() {
-        const msdDay = new Date("2022-12-15") - new Date;
+        const msdDay = new Date(`${new Date().getFullYear()}-12-25`) - new Date;
         const dDay = Math.floor(msdDay / (1000 * 60 * 60 * 24));
         return dDay;
     }
