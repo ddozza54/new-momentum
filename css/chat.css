@@ -34,7 +34,7 @@
     margin: 0 20px;
 }
 
-.date {
+.chatingPage_date {
     align-self: center;
     width: 250px;
     height: 50px;
@@ -49,12 +49,18 @@
 
 
 .memo-list li {
+    display: flex;
+    justify-content: space-between;
     width: 200px;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
     background-color: antiquewhite;
     color: rgba(1, 1, 1, 0.6);
+}
+
+.memoList_span {
+    margin: 0 5px;
 }
 
 .memo-marked {
