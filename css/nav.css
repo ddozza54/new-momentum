@@ -5,7 +5,8 @@
     border-bottom-left-radius: var(--border-radius-appBox);
     border-top-left-radius: var(--border-radius-appBox);
     width: var(--nav-width);
-    height: inherit;
+    height: var(--height-appbox);
+    min-height: var(--height-min-size);
     display: flex;
     flex-direction: column;
     justify-content: center;

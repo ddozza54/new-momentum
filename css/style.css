@@ -61,6 +61,7 @@ body {
     width: 70%;
     min-width: 1000px;
     height: var(--height-appbox);
+    min-height: var(--height-min-size);
     display: grid;
     margin: 10px 0;
     background-color: var(--color-bg);
@@ -71,6 +72,7 @@ body {
 
 main {
     height: var(--height-appbox);
+    min-height: var(--height-min-size);
     grid-column: 2/3;
     display: grid;
     grid-template-columns: 7fr 3fr;
