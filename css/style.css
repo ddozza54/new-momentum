@@ -26,7 +26,7 @@
 
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: var(--color-body);
     display: flex;
@@ -58,21 +58,22 @@ body {
 }
 
 #appBox {
-    width: 79.9%;
-    min-width: 800px;
+    width: 70%;
+    min-width: 1000px;
     height: var(--height-appbox);
     display: grid;
-    background-color: var(--color-bg);
-    grid-template-columns: 100px 1fr;
-    border-radius: var(--border-radius-appBox);
     margin: 10px 0;
+    background-color: var(--color-bg);
+    grid-template-columns: var(--nav-width) 1fr;
+    border-radius: var(--border-radius-appBox);
     animation: scaleChange 2.5s ease-in-out forwards;
 }
 
 main {
+    height: var(--height-appbox);
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 7fr 3fr;
 }
 
 button {
