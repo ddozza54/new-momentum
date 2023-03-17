@@ -1,21 +1,23 @@
+'use strict'
 const memoList = document.querySelector(".memo-list");
+const memoList_div = document.querySelector(".memoList");
 const replyForm = document.querySelector(".reply_form");
 const replyInput = replyForm.querySelector(".reply_input");
 
-const MEMOES_KEY = "chatMemos";
+const MEMOS_KEY = "chatMemos";
 
-let chatMemoes = [];
+let chatMemos = [];
 
 function saveNewMemo() {
-    localStorage.setItem(MEMOES_KEY, JSON.stringify(chatMemoes))
+    localStorage.setItem(MEMOS_KEY, JSON.stringify(chatMemos))
 }
 
 
 function onDeleteBtnClick(event) {
     const li = event.target.parentElement;
     li.remove();
-    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
-    saveToDos();
+    chatMemos = chatMemos.filter((memo) => memo.id !== parseInt(li.id));
+    saveNewMemo();
 }
 
 const onCheckedBoxClick = (event) => {
@@ -42,15 +44,16 @@ function paintNewMemo(newMemoObj) {
     const button = document.createElement("button");
     button.innerText = "❌";
 
+    button.addEventListener("click", onDeleteBtnClick);
+    marked.addEventListener("change", onCheckedBoxClick);
+
     checkboxAndSpan.appendChild(marked);
     checkboxAndSpan.appendChild(newMemoSpan);
     li.append(checkboxAndSpan);
     li.appendChild(button);
-
     memoList.appendChild(li);
+    memoList_div.scrollTop = memoList_div.scrollHeight;
 
-    marked.addEventListener("change", onCheckedBoxClick)
-    button.addEventListener("click", onDeleteBtnClick);
 }
 
 
@@ -62,9 +65,18 @@ function onChatMemoSubmit(event) {
         text: newMemoText,
         id: Date.now(),
     }
-    chatMemoes.push(newMemoObj);
+    chatMemos.push(newMemoObj);
     paintNewMemo(newMemoObj);
     saveNewMemo();
 }
 
 replyForm.addEventListener("submit", onChatMemoSubmit);
+
+
+const savedMemos = localStorage.getItem(MEMOS_KEY);
+
+if (savedMemos) {
+    const parsedMemos = JSON.parse(savedMemos);
+    chatMemos = parsedMemos;
+    parsedMemos.forEach(paintNewMemo);
+}

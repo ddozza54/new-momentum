@@ -1,6 +1,6 @@
 @import "reset.css";
 @import "variables.css";
-@import "idexPage.css";
+@import "indexPage.css";
 @import "login.css";
 @import "nav.css";
 @import "chat.css";
@@ -58,7 +58,7 @@ body {
 }
 
 #appBox {
-    width: 60%;
+    width: 65%;
     min-width: 1000px;
     height: var(--height-appbox);
     min-height: var(--height-min-size);
@@ -75,7 +75,7 @@ main {
     min-height: var(--height-min-size);
     grid-column: 2/3;
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 7fr 3.5fr;
 }
 
 button {
