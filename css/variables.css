@@ -1,7 +1,9 @@
 :root {
+    --colunm-size: 30px;
     --height-appbox: 700px;
     --height-min-size: 700px;
     --border-radius-appBox: 40px;
+    --border-radius-mini: 25px;
     --nav-width: 75px;
     --color-body: #FFD6B0;
     --color-bg: #FFF5EA;

@@ -1,84 +1,89 @@
-.indexPage_login_form,
-.indexPage_login_user {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-@keyframes vibration {
-    from {
-        transform: rotate(1deg);
+    .indexPage_login,
+    .indexPage_login_user,
+    .indexPage_login_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    to {
-        transform: rotate(-1deg);
+    .indexPage_login,
+    .indexPage_login_user {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        min-width: 250px;
+        height: 100%;
+
     }
-}
 
-/*로그인 전*/
-.indexPage_login_form {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-pink);
-    border-radius: 30px;
-    animation: vibration 0.1s infinite;
-    animation-delay: 3s;
-}
+    @keyframes vibration {
+        from {
+            transform: rotate(1deg);
+        }
 
-.indexPage_login_form:hover {
-    animation: none;
-}
+        to {
+            transform: rotate(-1deg);
+        }
+    }
 
-.indexPage_login_form span {
-    color: var(--color-green);
-    font-weight: 600;
-}
+    /*로그인 전*/
+    .indexPage_login {
+        background-color: var(--color-pink);
+        border-radius: var(--border-radius-mini);
+        animation: vibration 0.1s infinite;
+        animation-delay: 3s;
+    }
 
-.indexPage_login_form>input,
-.indexPage_login_form>button {
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 0 10px;
-    height: 30px;
-}
+    .indexPage_login:hover {
+        animation: none;
+    }
 
+    .indexPage_login_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-/*로그인 후*/
+    .indexPage_login_form span {
+        color: var(--color-green);
+        font-weight: 600;
+    }
 
-
-.indexPage_login_user {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: showUp 0.2s forwards;
-}
-
-.indexPage_login_user img {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-    margin: 8px 0;
-}
-
-.indexPage_login_user h2 {
-    font-size: 20px;
-    margin: 15px 0;
-}
+    .indexPage_login_form>input,
+    .indexPage_login_form>button {
+        border: none;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 0 10px;
+        height: 30px;
+    }
 
 
-.indexPage_login_form>button,
-.indexPage_login_user button {
-    width: 50%;
-    height: 30px;
-    border: none;
-    background-color: var(--color-lgreen);
-    color: whitesmoke;
-}
+    /*로그인 후*/
+    .indexPage_login_user {
+        animation: showUp 0.2s forwards;
+    }
+
+    .indexPage_login_user img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        margin: 8px 0;
+    }
+
+    .indexPage_login_user h2 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+
+    .indexPage_login_form>button,
+    .indexPage_login_user button {
+        width: 50%;
+        height: 30px;
+        border: none;
+        background-color: var(--color-lgreen);
+        color: whitesmoke;
+    }

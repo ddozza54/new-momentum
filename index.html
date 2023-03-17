@@ -67,18 +67,19 @@
                 </form>
                 <!--로그인-->
                 <div class="indexPage_login">
-                    <form class='indexPage_login_form hidden'>
+                    <form class='indexPage_login_form'>
                         <span>Welcome to MemoChat</span>
                         <input required type='text' placeholder='What is your Name?' maxlength='15' />
                         <button>Login</button>
                     </form>
+
+                    <div class="indexPage_login_user hidden">
+                        <img src="img/duck1.jpg" class="img" />
+                        <h2 id='greeting'></h2>
+                        <button id='logOutBtn'>Log Out</button>
+                    </div>
                 </div>
 
-                <div class="indexPage_login_user hidden">
-                    <img src="img/duck1.jpg" class="img" />
-                    <h2 id='greeting'></h2>
-                    <button id='logOutBtn'>Log Out</button>
-                </div>
 
                 <!--투두리스트-->
                 <div class='indexPage_toDoList'>

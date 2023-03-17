@@ -1,11 +1,11 @@
 .indexPage_toDoList {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-    width: 90%;
+    width: 100%;
     height: 90%;
     padding: 15px;
     color: var(--color-green);
@@ -19,7 +19,7 @@
 }
 
 .indexPage_toDoList input {
-    width: 80%;
+    width: 100%;
     height: 35px;
     padding: 0 10px;
     border-radius: 15px;
@@ -27,12 +27,12 @@
 }
 
 .todo-list {
-    width: 90%;
+    width: 100%;
     height: 250px;
-    margin: 10px;
+    margin-top: 10px;
     overflow: overlay;
     border: var(--color-pink) solid 2px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-mini);
 }
 
 ::-webkit-scrollbar {
@@ -50,7 +50,7 @@
 .todo-list>li {
     width: 80%;
     height: 30px;
-    margin: 10px 0;
+    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
