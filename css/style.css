@@ -71,7 +71,7 @@ body {
     background-color: var(--color-bg);
     grid-template-columns: var(--nav-width) 1fr;
     border-radius: var(--border-radius-appBox);
-    animation: scaleChange 2.5s ease-in-out forwards;
+    animation: scaleChange 1s ease-in-out forwards;
 }
 
 main {
