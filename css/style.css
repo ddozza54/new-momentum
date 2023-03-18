@@ -17,6 +17,7 @@
 
 * {
     font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 /*
@@ -60,6 +61,7 @@ body {
 #appBox {
     width: 65%;
     min-width: 1000px;
+    max-width: 1000px;
     height: var(--height-appbox);
     min-height: var(--height-min-size);
     display: grid;

@@ -3,7 +3,7 @@
     grid-column: 1/2;
     display: grid;
     grid-template-columns: var(--colunm-size) 1fr var(--colunm-size) 1fr var(--colunm-size);
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr var(--colunm-size) 2fr var(--colunm-size);
 
 }
 
