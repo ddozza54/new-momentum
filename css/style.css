@@ -12,12 +12,15 @@
 
 @import "snowflake.css";
 
+@import "profile/profile.css";
+
 
 @import "hidden.css";
 
 * {
     font-family: 'Nunito Sans', sans-serif;
     box-sizing: border-box;
+    color: var(--color-green);
 }
 
 /*
@@ -43,7 +46,6 @@ body {
     font-family: 'Fuzzy Bubbles', cursive;
     font-size: 30px;
     font-weight: 600;
-    color: var(--color-green);
     align-self: center;
 }
 
@@ -92,7 +94,6 @@ button {
     position: absolute;
     font-family: 'Fuzzy Bubbles', cursive;
     background-color: var(--color-bg);
-    color: var(--color-green);
     top: 20px;
     right: 20px;
 
@@ -100,9 +101,4 @@ button {
 
 button:hover {
     transform: scale(1.1);
-}
-
-
-.homeIcon {
-    color: var(--color-pink);
 }

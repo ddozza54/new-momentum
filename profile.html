@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gowun+Dodum&family=Nunito+Sans:ital,wght@0,400;0,600;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/canvas/drawing.css">
-    <title>MemoChat Drawing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile</title>
 </head>
 
 <body>
@@ -29,12 +29,12 @@
             <ul class="nav__list">
                 <li class="nav__btn">
                     <a class="nav__link" href="index.html">
-                        <i class="fas fa-home fa-2x homeIcon"></i>
+                        <i class="fas fa-2x fa-home"></i>
                     </a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="profile.html">
-                        <i class="far fa-user fa-2x userIcon"></i>
+                        <i style='color:#ffcac7' class="fas fa-user fa-2x userIcon"></i>
                     </a>
                 </li>
                 <li class="nav__btn">
@@ -44,8 +44,7 @@
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="drawing.html">
-                        <i style='color:#ffcac7' class="fas fa-2x fa-edit"></i> </a>
-                </li>
+                        <i class="far fa-2x fa-edit"></i> </a>
                 <li class="nav__btn">
                     <a class="nav__link" href="more.html">
                         <div class="nav__smallnotification"></div>
@@ -55,27 +54,34 @@
             </ul>
         </nav>
 
-        <!--앱_메인_인덱스-->
-        <main>
-            <div class='indexPage'>
-                <!--캔버스-->
-                <canvas></canvas>
+        <div class='profilePage'>
+            <section class='profilePage_header'>
+                <h2 id='profile_title'></h2>
+            </section>
+            <section class='profilePage_page1_img'>
 
+                <img src="img/duck1.jpg" class="profile_img" />
 
+                <input type='file' />
+            </section>
+            <section class='profilePage_page2_info'>
+                <div class='profile_edit'>
+                    <label for='nameInput'>Name : <input id='nameInput' required type='text' placeholder='Name'
+                            maxlength='15' />
+                    </label>
+                    <label for='birthdayInput'>Birthday :
+                        <input id="birthdayInput" required type='date' placeholder='Year' maxlength='4' />
+                    </label>
+                    <label for='ILikeInput'>I Like : <input id='ILikeInput' required type='text'
+                            placeholder='Write what you like' maxlength='15' />
+                    </label>
+                    <label for='contactInput'>Contact : <input id='contactInput' required type='number'
+                            placeholder='Contact' maxlength='15' /></label>
+                </div>
+                <button class='upadateBtn'>Update New Profile</button>
+            </section>
 
-
-            </div>
-
-            <!--앱_채팅페이지-->
-            <div class='chatingPage'>
-
-
-            </div>
-
-
-
-        </main>
-
+        </div>
     </div>
 
     <!--명언-->
@@ -92,10 +98,10 @@
     <script src='js/background.js'></script>
     <script src='js/quotes.js'></script>
 
-    <script src='js/drawing.js'></script>
-
+    <script src='js/profile/profile.js'></script>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+
 
 </body>
 

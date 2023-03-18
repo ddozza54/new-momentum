@@ -36,3 +36,7 @@
     position: absolute;
     right: 20px;
 }
+
+.fa-home {
+    color: var(--color-pink);
+}

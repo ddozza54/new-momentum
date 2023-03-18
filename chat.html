@@ -12,8 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gowun+Dodum&family=Nunito+Sans:ital,wght@0,400;0,600;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/canvas/drawing.css">
-    <title>MemoChat Drawing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             <ul class="nav__list">
                 <li class="nav__btn">
                     <a class="nav__link" href="index.html">
-                        <i class="fas fa-home fa-2x homeIcon"></i>
+                        <i class="fas fa-2x fa-home"></i>
                     </a>
                 </li>
                 <li class="nav__btn">
@@ -39,12 +39,11 @@
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="chat.html">
-                        <i class="far fa-comment fa-2x chatIcon"></i>
-                    </a>
+                        <i style='color:#ffcac7' class="fas fa-2x fa-comment"></i> </a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="drawing.html">
-                        <i style='color:#ffcac7' class="fas fa-2x fa-edit"></i> </a>
+                        <i class="far fa-2x fa-edit"></i> </a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="more.html">
@@ -55,47 +54,29 @@
             </ul>
         </nav>
 
-        <!--앱_메인_인덱스-->
-        <main>
-            <div class='indexPage'>
-                <!--캔버스-->
-                <canvas></canvas>
 
 
 
 
-            </div>
 
-            <!--앱_채팅페이지-->
-            <div class='chatingPage'>
-
-
-            </div>
-
-
-
-        </main>
-
-    </div>
-
-    <!--명언-->
-    <footer class='quote'>
-        <span class='quote_text'></span>
-        <span class='quote_author'></span>
-    </footer>
+        <!--명언-->
+        <footer class='quote'>
+            <span class='quote_text'></span>
+            <span class='quote_author'></span>
+        </footer>
 
 
 
 
-    <script src='js/app.js'></script>
-    <script src='js/clock.js'></script>
-    <script src='js/background.js'></script>
-    <script src='js/quotes.js'></script>
+        <script src='js/app.js'></script>
+        <script src='js/clock.js'></script>
+        <script src='js/background.js'></script>
+        <script src='js/quotes.js'></script>
 
-    <script src='js/drawing.js'></script>
+        <script src='js/profile/profile.js'></script>
 
+        <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
 </body>
 
