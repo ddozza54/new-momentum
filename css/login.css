@@ -8,6 +8,7 @@
     }
 
     .indexPage_login,
+    .indexPage_login_form,
     .indexPage_login_user {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -28,14 +29,14 @@
     }
 
     /*로그인 전*/
-    .indexPage_login {
+    .indexPage_login_form {
         background-color: var(--color-pink);
         border-radius: var(--border-radius-mini);
         animation: vibration 0.1s infinite;
         animation-delay: 3s;
     }
 
-    .indexPage_login:hover {
+    .indexPage_login_form:hover {
         animation: none;
     }
 
