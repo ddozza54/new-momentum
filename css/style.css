@@ -1,6 +1,9 @@
 @import "reset.css";
 @import "variables.css";
+
+
 @import "indexPage.css";
+
 @import "login.css";
 @import "nav.css";
 @import "chat.css";
@@ -13,9 +16,11 @@
 @import "snowflake.css";
 
 @import "profile/profile.css";
+@import "chatPage/chatPage.css";
 
 
 @import "hidden.css";
+
 
 * {
     font-family: 'Nunito Sans', sans-serif;

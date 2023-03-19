@@ -67,14 +67,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--color-green);
 }
 
 .memo_detail h4 {
     font-weight: 600;
-}
-
-.memo_detail h4,
-.memo_detail span {
-    color: var(--color-green);
 }
