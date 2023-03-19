@@ -1,27 +1,44 @@
 .chatPage_main {
     display: grid;
     grid-template-columns: var(--colunm-size) 1fr var(--colunm-size)1fr var(--colunm-size)1fr;
-    grid-template-rows: var(--colunm-size)1fr var(--colunm-size) 1fr var(--colunm-size);
+    grid-template-rows: var(--colunm-size)1fr var(--colunm-size) 1.8fr var(--colunm-size);
 }
 
-
+/*memo list*/
 .chatPage_memoLists_box {
     grid-column: 2/3;
     grid-row: 2/-2;
     width: 100%;
     height: 100%;
     display: flex;
-    background-color: var(--color-orange);
+    border: 3px solid var(--color-orange);
     border-radius: var(--border-radius-mini);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.chatPage_memoLists_box h2 {
+.chatPage_memoLists_box h2,
+.chatPage_memoList_header i {
     font-size: 20px;
     font-weight: bolder;
     margin: 15px 0;
+}
+
+.chatPage_memoList_header {
+    display: flex;
+    align-items: center;
+}
+
+.chatPage_memoList_header i {
+    position: relative;
+    top: 3px;
+    right: -40px;
+}
+
+.chatPage_memoList_header i:hover {
+    color: var(--color-dkorange);
+    transform: scale(1.1, 1.1);
 }
 
 .chatPage_memoLists {
@@ -35,7 +52,7 @@
 }
 
 .chatPage_memoList {
-    width: 85%;
+    width: 95%;
     height: 65px;
     margin: 3px 0;
     padding: 10px;
@@ -47,7 +64,7 @@
 
 .chatPage_memoList_i {
     text-align: center;
-    background-color: var(--color-orange);
+    background-color: var(--color-pink);
     padding: 8px;
     border-radius: 8px;
     margin-right: 10px;
@@ -56,3 +73,68 @@
 .chatPage_memoList_text h4 {
     font-weight: 600;
 }
+
+
+/*Today's Event*/
+.chatPage_events {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatPage_events h2 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px 0;
+}
+
+.chatPage_events_event {
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--color-pink);
+    border-radius: 15px;
+}
+
+.chatPage_events_event_text {
+    display: flex;
+    margin-left: 10px;
+}
+
+/*calender*/
+.chatPage_calendar {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+#calendar {
+    height: 100%;
+    border-radius: var(--border-radius-mini);
+
+}
+
+.fc-header-toolbar {
+    display: flex;
+    align-items: center;
+}
+
+#fc-dom-1 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.fc-toolbar-chunk {
+    display: flex;
+}
+
+.fc .fc-button-primary span {
+    color: white;
+}
+
+
+/*chat section*/

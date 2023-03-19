@@ -12,4 +12,29 @@
     --color-orange: #fbbd2e;
     --color-dkorange: #ef9f3c;
     --color-pink: #ffcac7;
+
+
+    --fc-border-color: #FFD6B0;
+    --fc-button-text-color: #fff;
+    --fc-button-bg-color: #01616a;
+    --fc-button-border-color: #01616a;
+    --fc-button-hover-bg-color: #ef9f3c;
+    --fc-button-hover-border-color: #ef9f3c;
+    --fc-button-active-bg-color: #ef9f3c;
+    --fc-button-active-border-color: #ef9f3c;
+    --fc-event-bg-color: #3788d8;
+    --fc-event-border-color: #3788d8;
+    --fc-event-text-color: #fff;
+    --fc-event-selected-overlay-color: #ef9f3c;
+    --fc-more-link-bg-color: #ef9f3c;
+    --fc-more-link-text-color: inherit;
+    --fc-event-resizer-thickness: 8px;
+    --fc-event-resizer-dot-total-width: 8px;
+    --fc-event-resizer-dot-border-width: 1px;
+    --fc-non-business-color: #ef9f3c;
+    --fc-bg-event-color: #8fdf82;
+    --fc-bg-event-opacity: 0.3;
+    --fc-highlight-color: rgba(188, 232, 241, .3);
+    --fc-today-bg-color: rgba(255, 220, 40, .15);
+    --fc-now-indicator-color: red;
 }

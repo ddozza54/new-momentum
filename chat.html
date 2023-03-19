@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Gowun+Dodum&family=Nunito+Sans:ital,wght@0,400;0,600;1,300&display=swap"
         rel="stylesheet">
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.4/index.global.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.4/index.global.min.js'></script>
+
     <link rel="stylesheet" href="css/style.css">
     <title>Profile</title>
 </head>
@@ -59,7 +62,11 @@
         <div class='chatPage_main'>
 
             <div class="chatPage_memoLists_box">
-                <h2>Memo List </h2>
+                <div class='chatPage_memoList_header'>
+                    <h2>Memo List </h2>
+                    <span>
+                        <i class="fas fa-plus-circle"></i> </span>
+                </div>
                 <div class='chatPage_memoLists'>
                     <div class="chatPage_memoList">
                         <span class='chatPage_memoList_i'>
@@ -75,7 +82,24 @@
 
             </div>
 
+            <div class='chatPage_events'>
+                <h2>Today's Event</h2>
+                <div class='chatPage_events_event'>
+                    <input type='checkbox' />
+                    <span class='chatPage_events_event_text'>
+                        Sally's Birthday
+                    </span>
+                </div>
+            </div>
 
+            <div class='chatPage_calendar'>
+                <div id='calendar'>
+
+
+                </div>
+
+
+            </div>
 
 
         </div>
@@ -136,7 +160,7 @@
     <script src='js/background.js'></script>
     <script src='js/quotes.js'></script>
 
-    <script src='js/profile/profile.js'></script>
+    <script defer src='js/chatmemo/chatmemo.js'></script>
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 
