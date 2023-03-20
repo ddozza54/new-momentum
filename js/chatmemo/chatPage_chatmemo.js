@@ -5,5 +5,11 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
 });
 calendar.render();
 
+const plusIcon = document.querySelector(".chatPage_memoList_header_plusIcon");
+
+const handleClickPlusIcon = () => {
+    alert('clicked!');
+}
 
 
+plusIcon.addEventListener("click", handleClickPlusIcon)

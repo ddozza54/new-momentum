@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .chatPage_memoLists_box h2,
@@ -40,6 +41,20 @@
     color: var(--color-dkorange);
     transform: scale(1.1, 1.1);
 }
+
+.chatPage_memoLists_add {
+    position: absolute;
+    width: 250px;
+    height: 130px;
+    background-color: var(--color-pastel-green);
+}
+
+.group_icon {
+    padding: 15px;
+    background-color: var(--color-bg);
+
+}
+
 
 .chatPage_memoLists {
     width: 90%;
@@ -145,7 +160,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: rgb(193, 216, 215);
+    background-color: var(--color-pastel-green);
     border-bottom-right-radius: var(--border-radius-appBox);
     border-top-right-radius: var(--border-radius-appBox);
 }
