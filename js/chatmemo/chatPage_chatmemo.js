@@ -4,3 +4,6 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     fixedWeekCount: false,
 });
 calendar.render();
+
+
+
