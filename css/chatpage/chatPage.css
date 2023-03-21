@@ -73,13 +73,13 @@
     padding: 10px;
     display: flex;
     align-items: center;
-    background-color: var(--color-lgreen);
+    background-color: var(--color-body);
     border-radius: 15px;
 }
 
 .chatPage_memoList_i {
     text-align: center;
-    background-color: var(--color-pink);
+    background-color: var(--color-pastel-green);
     padding: 8px;
     border-radius: 8px;
     margin-right: 10px;
