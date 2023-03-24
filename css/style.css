@@ -16,7 +16,7 @@
 @import "snowflake.css";
 
 @import "profile/profile.css";
-@import "chatPage/chatPage.css";
+@import "./chatpage/chatPage.css";
 @import "more/morePage.css";
 
 @import "hidden.css";
