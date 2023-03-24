@@ -1,0 +1,97 @@
+.morePage {
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Application Info*/
+.morePage_info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 65%;
+    border: 3px solid var(--color-lgreen);
+    border-radius: var(--border-radius-mini);
+    position: relative;
+}
+
+.morePage h2 {
+    width: 65%;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 30px 0;
+    padding: 15px;
+    background-color: var(--color-pastel-green);
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: -50px;
+}
+
+
+.morePage_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.morePage_info_Q {
+    display: block;
+    margin-right: 15px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.morePage_contacts_box {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    border: 3px solid var(--color-dkorange);
+    border-radius: var(--border-radius-mini);
+}
+
+.morePage_contacts_box h2 {
+    background-color: var(--color-orange);
+}
+
+.morePage_contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.morePage_contacts_contact:hover {
+    transform: scale(1.1);
+    color: var(--color-dkorange);
+}
+
+.morePage_contacts_contact {
+    width: 80px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.morePage_contacts_contact_icon {
+    text-align: center;
+    font-size: 35px;
+}
+
+.morePage_contacts_contact span {
+    text-align: center;
+    font-size: 12px;
+}
