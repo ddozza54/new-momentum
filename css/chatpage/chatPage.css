@@ -4,7 +4,6 @@
     grid-template-rows: var(--colunm-size) 1fr var(--colunm-size) 1.8fr var(--colunm-size);
 }
 
-/*test*/
 /*memo list*/
 .chatPage_memoLists_box {
     grid-column: 2/3;
