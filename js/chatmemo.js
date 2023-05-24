@@ -59,15 +59,18 @@ function paintNewMemo(newMemoObj) {
 
 function onChatMemoSubmit(event) {
     event.preventDefault();
-    const newMemoText = replyInput.value;
-    replyInput.value = "";
-    const newMemoObj = {
-        text: newMemoText,
-        id: Date.now(),
+    if (replyInput.value.trim() !== "") {
+        const newMemoText = replyInput.value;
+        const newMemoObj = {
+            text: newMemoText,
+            id: Date.now(),
+        }
+        chatMemos.push(newMemoObj);
+        paintNewMemo(newMemoObj);
+        saveNewMemo();
+
     }
-    chatMemos.push(newMemoObj);
-    paintNewMemo(newMemoObj);
-    saveNewMemo();
+    replyInput.value = "";
 }
 
 replyForm.addEventListener("submit", onChatMemoSubmit);
