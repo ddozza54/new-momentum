@@ -34,15 +34,17 @@ function paintTodo(newToDoObj) {
 
 function handleToDoSubmit(event) {
     event.preventDefault();
-    const newTodo = toDoInput.value;
-    toDoInput.value = "";
-    const newToDoObj = {
-        text: newTodo,
-        id: Date.now(),
+    if (toDoInput.value.trim() !== "") {
+        const newTodo = toDoInput.value;
+        const newToDoObj = {
+            text: newTodo,
+            id: Date.now(),
+        }
+        toDos.push(newToDoObj);
+        paintTodo(newToDoObj);
+        saveToDos();
     }
-    toDos.push(newToDoObj);
-    paintTodo(newToDoObj);
-    saveToDos();
+    toDoInput.value = "";
 }
 
 
