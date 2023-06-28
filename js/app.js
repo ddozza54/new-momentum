@@ -3,6 +3,7 @@ const loginInput = document.querySelector(".indexPage_login_form input");
 const greeting = document.querySelector("#greeting");
 const loginUser = document.querySelector(".indexPage_login_user");
 const logoutBtn = document.getElementById("logOutBtn");
+const searchBar = document.querySelector(".indexPage_searchInput")
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = 'username';
@@ -35,4 +36,11 @@ if (savedUserName === null) {
 } else {
     paintGreetings(savedUserName);
 }
+
+const handleSearchbar = (e) => {
+    e.preventDefault();
+    alert("가짜 검색창 입니다. 속았쥬")
+}
+
 logoutBtn.addEventListener("click", onLogoutBtnClick);
+searchBar.addEventListener("submit", handleSearchbar)
