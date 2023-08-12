@@ -48,15 +48,15 @@ Developing after combining what was learned in cloning Chrome App class and clon
 
 ## 🪩 3. 주요 기능
 
-### 현재 시간 초 단위로 제공
+-  현재 시간 초 단위로 제공
 
-### 위치 기반의 현재 날씨 제공
+-  위치 기반의 현재 날씨 제공
 
-### 크리스마스 D-day
+-  크리스마스 D-day
 
-### Local Storage 를 이용한 간단한 로그인
+-  Local Storage 를 이용한 간단한 로그인
 
-### Chat 형식의 메모 - Local Storage 이용
+-  Chat 형식의 메모 - Local Storage 이용
 
 
 
